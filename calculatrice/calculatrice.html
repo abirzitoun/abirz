@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>calculator</title>
+<style>
+    body {
+    background-color:deeppink;
+    }
+.container {
+    width: 250px;
+    margin: 150px auto;
+    background-color:darkviolet;
+    border-radius: 4px;
+    
+}
+#display {
+    display: block;
+    margin: 15px auto;
+    height: 50px;
+    width: 250px;
+    padding: 0 10px;
+    border-radius: 4px;
+    background-color: #FFF;
+    font-size: 28px;
+    color: #000;
+    text-align: right;
+}
+.button {
+    display: inline-block;
+    margin: 3px;
+    width: 60px;
+    height: 60px;
+    font-size: 25px;
+    font-weight: bold;
+    border-radius: 4px;
+}
+.operator {
+    margin: 2px 2px 6px 2px;
+    color: #FFF;
+    text-shadow: -1px -1px 0px #44006F;
+    background-color: #434343;
+}
+
+ 
+#clear {
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 225, 255);
+    text-shadow: -1px -1px 0px #44006F;}
+</style>
+</head>
+<body>
+<div class="wrap">
+    <fieldset class="container">
+        <form name="calculator">
+ 
+            <input id="display" type="text" name="display" readonly>
+ 
+            <input class="button digits" type="button" value="7" onclick="calculator.display.value += '7'">
+            <input class="button digits" type="button" value="8" onclick="calculator.display.value += '8'">
+            <input class="button digits" type="button" value="9" onclick="calculator.display.value += '9'">
+            <input class="button operator" type="button" value="+" onclick="calculator.display.value += ' + '">
+            <br>
+            <input class="button digits" type="button" value="4" onclick="calculator.display.value += '4'">
+            <input class="button digits" type="button" value="5" onclick="calculator.display.value += '5'">
+            <input class="button digits" type="button" value="6" onclick="calculator.display.value += '6'">
+            <input class="button operator" type="button" value="-" onclick="calculator.display.value += ' - '">
+            <br>
+            <input class="button digits" type="button" value="1" onclick="calculator.display.value += '1'">
+            <input class="button digits" type="button" value="2" onclick="calculator.display.value += '2'">
+            <input class="button digits" type="button" value="3" onclick="calculator.display.value += '3'">
+            <input class="button operator" type="button" value="x" onclick="calculator.display.value += ' * '">
+            <br>
+            <input id="clear" class="button" type="button" value="C" onclick="calculator.display.value = ''">
+            <input class="button digits" type="button" value="0" onclick="calculator.display.value += '0'">
+            <input class="button operator" type="button" value="=" onclick="calculator.display.value = eval(calculator.display.value)">
+            <input class="button operator" type="button" value="/" onclick="calculator.display.value += ' / '">
+        </form>
+    </fieldset>
+</div>
+</body>
+</html>

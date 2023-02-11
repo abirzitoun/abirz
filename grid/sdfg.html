@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+    <title>Document</title>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    </head>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        div,
+        h1,
+            a {
+                border: none;
+            }
+            a {
+                border: none;
+                text-decoration: none;
+            }
+        .barre {
+            border: 2px solid black;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            text-decoration-color: white;
+        }
+        .links {
+            display: flex;
+            list-style: none;
+            gap:30px;
+
+        }
+        button {
+            display: inline-block;
+            background-color: orangered;
+            border-radius: 5px;
+            border: 4px double #cccccc;
+            color: #eeeeee;
+            text-align: center;
+            padding: 5px;
+            cursor: pointer;
+            margin: 10px;
+            text-decoration-color: white;
+        }
+        .main-article{
+            display:grid;
+            grid-template-columns: 300px 300px ;
+            grid-template-rows: 350px 350px;
+            gap: 15px;
+            grid-template-areas: "header header"
+            "sidebar content-1";
+            text-align: center;
+            padding-right:400px ;
+            padding-left: 400px;
+            justify-content: center;
+            text-align: start;
+
+        }
+        .taswira {
+            width:300px;
+        }
+        img{
+            width:100%;
+        }
+        .article{
+            display: flex;
+            width:500px;
+        }
+        div.header{grid-area: header ; background-color: blue; display: block; align-self: center;}
+        div.sidebar{grid-area: sidebar; background-color: blueviolet; }
+        div.content-1{grid-area: content-1; background-color: rgb(43, 153, 226); }
+    </style>
+  
+    <body>
+        <div class="barre">
+            <h1>Pixelmatters</h1>
+            <ul class="links">
+                <li> <a href="">Work</a></li>
+                <li><a href="">Approach</a></li>
+                <li><a href="">Culture</a></li>
+                <li><a href="">Careers</a></li>
+                <li><a href=""><u><strong>Blog</strong></u></a></li>
+                <button>
+                    <li><a href="" >Get in touch </a></li>
+                </button>
+        </div>
+   
+   
+   
+   
+   
+   
+    </div>
+    <div class="main-article">
+        <div class="header">
+            <div class="taswira">
+                <img src="ph1.png" alt="">
+            </div>
+            <div>
+                <span>Product -July ,24,2020 </span>
+                <h3>Interview - What it's like to work remotely in big-sized product development?</h3>
+                <p>People say that developing products isn't easy. Neither it is to build long-distance relationships . But how about doing both,simultaneously?</p>
+            </div>
+        </div>
+
+        <div class="sidebar">
+            <div class="taswira">
+                <img src="ph2.png" alt="">
+            </div>
+            <div>
+                <span>DEVELOPMENT - July 2,2020</span>
+                <h3>Hybrid vs. Native- Here is how you can choose one over the other...</h3>
+                <p>there is no denying it, hybrid mobile development is booming and becoming the main option when considering developing a mobile application due to the lower costs and faster development time.</p>
+            </div>
+        </div>
+        <div class="content-1">
+            <div class="taswira">
+                <img src="ph3.png" alt="">
+            </div>
+            <div>
+                <span>DEVELOPMENT - July,2,2020</span>
+                <h3>From monolithic to headless: how and why you should adapt your WordPress stack </h3>
+                <p>Every dynamic website consists of two main parts : the backend and the frontend . The backend ,which in marketing websites is commonly a Content Management System (CMS), allows the website owners...  </p>
+            </div>
+        </div>
+      
+    </div>
+  </body>
+</html>

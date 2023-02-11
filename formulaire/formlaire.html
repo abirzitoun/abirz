@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<title>
+    ZAbir
+</title>
+<style> 
+    body{ background-image:url("rose.jpg"); 
+        background-position: center;
+        background-repeat: no-repeat; 
+        background-size: cover; 
+        text-align: center;
+        }
+    div { margin: 90px 115px 100px 120px ;background-color:white ;width: 520px;height: 400px;}  
+    button {
+        display: inline-block;
+        background-image: url("rose.jpg") ;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 25px;
+        border: 4px double #cccccc;
+        color: #eeeeee;
+        text-align: center;
+        font-size: 20px;
+        padding: 2px;
+        width: 450px;
+        transition: all 0.5s;
+        cursor: pointer;
+        margin: 5px;
+      }
+      button span {
+        cursor: pointer;
+        display: inline-block;
+        position: relative;
+        transition: 0.5s;
+      }
+      button span:after {
+        content: "\00bb";
+        position: absolute;
+        opacity: 0;
+        top: 0;
+        right: -20px;
+        transition: 0.5s;
+      }
+      button:hover {
+        background-image: url("ro.jpg"); 
+      }
+      button:hover span {
+        padding-right: 25px;
+      }
+      button:hover span:after {
+        opacity: 1;
+        right: 0;
+      }
+</style>
+<div>
+<head>
+    <h1>
+       <center>Registration</center>
+    </h1>
+</head>
+
+<body>
+    <form>
+        <center/><table border="0">
+            <tr>
+                <td>
+                    <label for="Name">Full Name</label><br>
+                    <input id="Name" type="text" placeholder="Enter your name" size=30 />
+                    <br>
+                    <label for="Email">Email</label><br>
+                    <input id="Email" type="email" placeholder="Enter your email" size=30 />
+                    <br>
+                    <label for ="Password">Password</label><br>
+                    <input  id="Password" type="password" placeholder="Enter your password" size=30 />
+
+                </td>
+                <td>
+                    <label for="Name">UseName</label><br>
+                    <input id="Name" type="text"  placeholder="Enter your usename" size=30 />
+                    <br>
+                    <label for="Phone Number">Phone Number</label><br>
+                    <input id="Phone Number" type="tel" placeholder="Enter your number" size=30 />
+                    <br>
+                    <label for ="Confirm Password">Confirm Password</label><br>
+                    <input  id="Confirm Password" type="password" placeholder ="Confirm your password" size = 30/>
+
+                </td>
+            </tr>
+        </table></center><br>
+
+        <center/><table border="0">
+            <tr>
+                <h2>
+                    <label for ="">Gender</label><br>
+                </h2>
+            </tr>
+            <tr>
+                <td>
+                    <input  id="wxc" type="radio" name="abd" value="test"/>
+                    <label for ="wxc">Male</label>
+                </td>
+                <td>
+                    <input  id="wxc1" type="radio" name="abd" value="test"/>
+                    <label for ="wxc1">Female</label><br>
+                </td>
+                <td>
+                    <input  id="wxc2" type="radio" name="abd" value="test"/>
+                    <label for ="wxc2">Prefer not to say</label><br>
+                </td>
+            </tr>
+        </table></center><br>
+        <center>
+            <button>
+                <span>Envoyer</span>
+            </button>
+        </center>
+    </form>
+</body>
+</div>
+</html>

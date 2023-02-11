@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href='sty.css'>
+    </head>
+
+    <body> 
+        <h2 > What are you going to plan ?</h2>
+        <div id ="todoList"></div>
+        <div class="form" >
+            <button id="close">x</button>
+            <form>
+                Add a new 
+                <h6>title</h6>
+                <input id="todoTitle" size=32 type="text" value="" />
+
+                <h6>descreption<h6>
+                <input id="todoDescrp" size = 32 type="textarea" size="5" value=""/>
+
+                <h6>deadline</h6>
+                <input id="todoDdl" type="date" />
+
+                <br><br><button id ="add" type="button" onclick="addTodo()" >add</button>
+            </form>
+
+        </div>
+
+        <button type="button" id ="addtodo" onclick="displayForm()">Addnew</button>
+
+    </body>
+    <script src = "mlk.js" >
+
+    </script>    
+
+</html>

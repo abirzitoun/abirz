@@ -1,0 +1,119 @@
+.todo{
+    display: flex;
+    flex-direction:  row;
+    gap : 50px;
+
+}
+.form{
+    right:35%;
+    display:none;
+    background-color: white;
+    position:absolute;
+    width:31%;
+    padding:15px;
+    top:25%;
+    transform:scale(1.5);
+    box-shadow: 5px 10px 10px black;
+
+}
+
+
+
+
+#close {
+    padding: 7px 12px;
+    font-size: 10px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #24eec9;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 9px #b1e5e5;
+    float:right;
+  }
+  
+#close:hover {background-color: #24eec9}
+  
+#close:active {
+    background-color: #24eec9;
+    box-shadow: 0 5px #b1e5e5;
+    transform: translateY(4px);
+  }
+
+
+
+
+
+#add {
+    background-color: #1ef4e9;
+    border: none;
+    color: white;
+    padding: 8px 120px;
+    text-align: center;
+    font-size: 12px;
+    opacity: 0.6;
+    transition: 0.3s;
+    display: inline-block;
+    text-decoration: double;
+    cursor: pointer;
+  }
+  
+#add:hover {opacity: 1}
+
+
+
+#addtodo {
+    background-color: #ff6db1;
+    border-radius: 10px;
+    border: 4px double #f44396;
+    color: #f31d8f;
+    text-align: center;
+    font-size: 13px;
+    padding: 20px;
+    width: 100px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+    float:right;
+  }
+#addtodo span {
+cursor: pointer;
+display: inline-block;
+position: relative;
+transition: 0.5s;
+}
+#addtodo span:after {
+content: "\00bb";
+position: absolute;
+opacity: 0;
+top: 0;
+right: -20px;
+transition: 0.5s;
+}
+#addtodo:hover {
+background-color: #f7c2f9;
+}
+#addtodo:hover span {
+padding-right: 25px;
+}
+#addtodo:hover span:after {
+opacity: 1;
+right: 0;
+}
+
+
+
+h2{
+    color: rgb(39, 221, 238);
+    font-size: xx-large;
+}
+#todoList{color: #2427ed;
+    
+
+}
+
+
+
